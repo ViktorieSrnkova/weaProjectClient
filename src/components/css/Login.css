@@ -1,0 +1,64 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.login-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  min-height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lbl {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+.login-form input,
+.login-form button {
+  height: 3rem;
+  width: 30rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+.login-form input {
+  padding-bottom: 2px;
+}
+.login-form button {
+  background-color: #31cfc2;
+  color: white;
+  padding: 0rem;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.login-form button:hover {
+  background-color: #0c766d;
+}
+.login-form input:focus {
+  outline: none;
+  background: rgb(226, 223, 223);
+}
+@media screen and (max-width: 960px) {
+  .login-form input,
+  .login-form button {
+    width: 20rem;
+    font-size: 0.9rem;
+    transition: 0.3s;
+  }
+  .login-form button {
+    font-size: 1.3rem;
+  }
+}

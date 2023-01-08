@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(110deg, #45f5e7 0%, #fda085 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 2rem;
+}
+
+header,
+.todo-form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.todo-form input,
+.todo-form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  border-radius: 15px 0 0 15px;
+}
+.todo-form input {
+  padding: 1.1rem;
+  font-size: 1.2rem;
+  height: 65px;
+  color: #0c766d;
+  width: 29rem;
+}
+
+.todo-form input:focus {
+  outline: none;
+  background: rgb(226, 223, 223);
+}
+.todo-form button {
+  color: #fda085;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0 15px 15px 0;
+}
+.todo-form button:hover {
+  background: #f7fffe;
+  color: #31cfc2;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.todo-list {
+  min-width: 30%;
+  max-width: 80%;
+  margin-bottom: 5rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.todos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 10rem;
+  width: 10rem;
+  background: rgb(233, 233, 233);
+  border-radius: 15px;
+}
+.todo {
+  min-height: 10rem;
+  width: 10rem;
+  background: white;
+  font-size: 0.8rem;
+  color: #0c766d;
+  transition: all 1s ease;
+  border-radius: 15px;
+  position: absolute;
+}
+.filter-todo {
+  padding: 1rem;
+}
+.todo li {
+  flex: 1;
+}
+.todo button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: 8rem;
+}
+
+.trash-btn {
+  background: rgb(157, 146, 146);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.5rem;
+  border-radius: 0 15px 0 0;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  top: 0;
+}
+.update-btn {
+  margin-top: 2rem;
+  background: #fda085;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 0;
+  width: 2rem;
+  height: 2.5rem;
+  position: relative;
+  top: 0;
+}
+.priority-btn {
+  margin-top: 4.5rem;
+  background: gray;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 0;
+  width: 2rem;
+  height: 2.5rem;
+  position: relative;
+  top: 0;
+}
+.prio-gray {
+  background: rgb(74, 182, 236);
+}
+.prio-green {
+  background: rgb(124, 201, 57);
+}
+.prio-orange {
+  background: rgb(255, 204, 19);
+}
+.prio-red {
+  background: rgb(235, 69, 103);
+}
+.todo-prio-gray {
+  background: rgba(74, 182, 236, 0.413);
+}
+.todo-prio-green {
+  background: rgba(124, 201, 57, 0.418);
+}
+.todo-prio-orange {
+  background: rgba(255, 204, 19, 0.39);
+}
+.todo-prio-red {
+  background: rgba(235, 69, 102, 0.377);
+}
+.complete-btn {
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  background: #31cfc2;
+  border-radius: 0 15px 15px 0;
+  position: relative;
+  margin-top: 7rem;
+  width: 3rem;
+  height: 3rem;
+  bottom: 0;
+}
+
+.todo-item {
+  padding: 0.5rem 0.5rem;
+  max-width: 8rem;
+  inline-size: 9rem;
+  overflow-wrap: break-word;
+  display: inline-block;
+  max-height: 9.5rem;
+}
+
+.fa-trash,
+.fa-check,
+.fa-pen {
+  pointer-events: none;
+}
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  background-color: rgb(226, 223, 223);
+  border-radius: 15px 0 0 15px;
+}
+.uncompleted {
+  background-color: white;
+  border-radius: 15px 0 0 15px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+  border-radius: 15px;
+}
+
+.select {
+  margin-left: 2rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+select {
+  background-color: white;
+  color: #0c766d;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #fda085;
+  cursor: pointer;
+  pointer-events: none;
+  transition: all 1s ease;
+}
+
+select:focus {
+  outline: none;
+  background: rgb(226, 223, 223);
+  border-radius: 15px;
+  box-shadow: none;
+  border: 0;
+}
