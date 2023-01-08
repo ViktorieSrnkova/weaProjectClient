@@ -1,16 +1,6 @@
 import axios from "axios";
-const BASE_URL = "weaprojektservervs.up.railway.app";
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "weaprojektservervs.up.railway.app";
-
-export default axios.create({
-  baseURL: BASE_URL,
-});
-export const axiosPrivate = axios.create({
-  baseURL: BASE_URL,
-  headers: { "Content-Type": "application/json" },
-  withCredentials: true,
-});
+axios.defaults.baseURL = "https://weaprojektservervs.up.railway.app";
 
 export const modifyTodo = (todo) => {
   return axios.post("/todo", todo);
