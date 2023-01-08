@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
@@ -50,7 +50,7 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter basename="/weaProjectClient">
+      <HashRouter basename="/weaProjectClient">
         <div className="App">
           <Navbar />
           <div className="Content">
@@ -85,7 +85,7 @@ function App() {
           </div>
         </div>
         <div className="Foot"></div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
