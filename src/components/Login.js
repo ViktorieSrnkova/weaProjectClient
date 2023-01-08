@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import useAuth from "../hooks/useAuth";
 import { useNavigate, useLocation } from "react-router-dom";
 
-import axios from "../api/axios";
+import axios from "axios";
 const LOGIN_URL = "/login";
 
 const Login = () => {
