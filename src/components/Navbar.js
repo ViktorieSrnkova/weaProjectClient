@@ -44,7 +44,11 @@ const Navbar = () => {
     <Fragment>
       <>
         <li className="nav-item">
-          <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          <Link
+            to="/weaProjectClient"
+            className="nav-links"
+            onClick={closeMobileMenu}
+          >
             TODO LIST
           </Link>
         </li>
@@ -75,7 +79,11 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link
+            to="/weaProjectClient"
+            className="navbar-logo"
+            onClick={closeMobileMenu}
+          >
             Todo List
           </Link>
           <div className="menu-icon" onClick={clickHandler}>
