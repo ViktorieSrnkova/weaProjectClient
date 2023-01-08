@@ -50,7 +50,7 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/weaProjectClient">
         <div className="App">
           <Navbar />
           <div className="Content">
@@ -76,7 +76,7 @@ function App() {
                       <Popup setAction={setAction} action={action}></Popup>
                     </>
                   }
-                  path="/"
+                  path="/weaProjectClient"
                   exact
                 />
               </Route>
