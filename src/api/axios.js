@@ -1,7 +1,7 @@
 import axios from "axios";
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "weaprojektservervs.up.railway.app";
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "weaprojektservervs.up.railway.app";
 
 export default axios.create({
   baseURL: BASE_URL,
