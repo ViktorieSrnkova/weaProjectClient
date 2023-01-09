@@ -49,7 +49,7 @@ const Navbar = () => {
             className="nav-links"
             onClick={closeMobileMenu}
           >
-            TODO LIST
+            TODOS
           </Link>
         </li>
         <li className="nav-item">
@@ -79,11 +79,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link
-            to="/weaProjectClient"
-            className="navbar-logo"
-            onClick={closeMobileMenu}
-          >
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             Todo List
           </Link>
           <div className="menu-icon" onClick={clickHandler}>

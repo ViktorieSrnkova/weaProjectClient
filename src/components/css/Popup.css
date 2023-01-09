@@ -57,10 +57,18 @@
 .confirm-btn {
   margin-top: 20px;
   font-size: 1em;
+  padding: 8px 20px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #31cfc2;
   color: white;
+  transition: 0.3s;
 }
 
-.close-btn:hover {
+.close-btn:hover,
+.confirm-btn:hover {
   background-color: white;
   color: #31cfc2;
 }

@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Login from "./components/Login";
 import Popup from "./components/Popup";
 import RequireAuth from "./components/RequireAuth";
+import WelcomePage from "./components/WelcomePage";
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -55,6 +56,7 @@ function App() {
           <Navbar />
           <div className="Content">
             <Routes>
+              <Route path="/" element={<WelcomePage />} />
               <Route element={<RequireAuth />}>
                 <Route
                   element={
