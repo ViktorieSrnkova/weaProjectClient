@@ -31,16 +31,15 @@ function WelcomePage() {
             <p>
               Todo List also lets you associate your todos with four colors:
               blue, green, yellow and red. Its up to you how you choose to use
-              this feature but here are some suggestions.{" "}
+              this feature but here are some suggestions.
             </p>
             <p>
               1. Think of individual colors as groups and add the same theme of
               todos into one colors
             </p>
             <p>
-              {" "}
               2. Think of individual colors as priorities which tell you in what
-              order you should finish your todos{" "}
+              order you should finish your todos
             </p>
             <p>
               3. Think of individual colors as urgency to tell you how quickly
