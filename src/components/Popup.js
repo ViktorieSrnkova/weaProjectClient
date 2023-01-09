@@ -23,13 +23,13 @@ const Popup = (props) => {
     setValue(event.target.value);
   };
 
-  const updateHandler = () => {
+  const updateHandler = async () => {
     const update = { ...selectedTodo };
     update.todo_text = value;
-    modifyTodo(update).then((res) => {
+    await modifyTodo(update).then((res) => {
       setSelectedTodo(null);
+      props.setAction(!props.action);
     });
-    props.setAction(!props.action);
   };
 
   if (selectedTodo === null) {
