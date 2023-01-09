@@ -29,18 +29,6 @@ function WelcomePage() {
           </li>
           <li>
             <p>
-              To update the text of the todo press the orange pencil button in
-              your todo. Popup window will open where you can change the content
-              of the specific todo. To save this change press the confirm button
-              otherwise press the X button.
-            </p>
-            <video width="852" height="580" autoPlay muted loop>
-              <source src={videoU} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </li>
-          <li>
-            <p>
               Todo List also lets you associate your todos with four colors:
               blue, green, yellow and red. Its up to you how you choose to use
               this feature but here are some suggestions.{" "}
@@ -60,6 +48,18 @@ function WelcomePage() {
             </p>
             <video width="852" height="580" autoPlay muted loop>
               <source src={videoP} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </li>
+          <li>
+            <p>
+              To update the text of the todo press the orange pencil button in
+              your todo. Popup window will open where you can change the content
+              of the specific todo. To save this change press the confirm button
+              otherwise press the X button.
+            </p>
+            <video width="852" height="580" autoPlay muted loop>
+              <source src={videoU} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </li>
